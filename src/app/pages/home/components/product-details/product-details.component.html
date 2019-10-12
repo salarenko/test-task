@@ -1,0 +1,28 @@
+<div class="product">
+
+  <div class="product__image" [style.background-image]="prepareUrl(product.imageUrl)">
+  </div>
+
+  <div class="product__content">
+
+    <div class="content__title">
+      {{product.title}}
+    </div>
+
+    <div class="content__section">
+
+      <p class="content__paragraph">
+          {{product.description}}
+      </p>
+
+      <div class="content__buttons">
+        <button class="button button--lg button--success"
+                [class.button--disabled]="isInCart"
+                (click)="addToCart(product)">
+          {{isInCart ? 'Added' : 'Add to Cart'}}
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

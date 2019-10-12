@@ -1,0 +1,48 @@
+.product {
+
+  @include box-shadow();
+
+  &--selectable {
+    transition: all .2s;
+    cursor: pointer;
+    @include hover-translation();
+  }
+
+  &__image {
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content {
+
+    padding: 2rem;
+
+    @include respond(tab-port) {
+      padding: 1rem;
+    }
+
+    .content {
+
+      &__title {
+        font-weight: bold;
+        font-size: $font-md;
+        margin-bottom: 1rem;
+        @include respond(tab-port) {
+          margin-bottom: .5rem;
+        }
+      }
+
+      &__description {
+        font-size: $font-sm;
+
+        &--wrapped {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+    }
+
+  }
+}

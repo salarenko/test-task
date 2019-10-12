@@ -1,0 +1,23 @@
+<nav>
+  <div class="navigation-bar">
+
+    <div class="navigation-bar__logo">
+      logo
+    </div>
+
+    <div class="navigation-bar__links">
+
+      <div class="navigation-bar__link" *ngFor="let navigationLink of navigationLinks">
+        <a [routerLink]="navigationLink.url" routerLinkActive="redirection-link--active">
+          {{navigationLink.label}}
+        </a>
+      </div>
+
+      <div class="navigation-bar__link">
+        <fa-icon icon="search"></fa-icon>
+      </div>
+
+    </div>
+
+  </div>
+</nav>

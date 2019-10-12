@@ -1,0 +1,48 @@
+@import "../../../../styles/base/variables";
+@import "../../../../styles/base/mixins";
+
+.navigation-bar {
+
+  padding: 2rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: 0 1px 3px 0 $gray;
+
+  @include respond(tab-port) {
+    padding: 1rem 1.75rem;
+  }
+
+  @include respond(phone) {
+    padding: 1rem 1.75rem;
+    flex-direction: column;
+  }
+
+  &__logo {
+
+  }
+
+  &__links {
+    display: flex;
+
+    @include respond(phone) {
+      margin-top: .75rem;
+      justify-content: space-between;
+    }
+
+    .navigation-bar {
+
+      &__link {
+
+        &:not(:first-child) {
+          margin-left: 2rem;
+          @include respond(phone) {
+            margin-left: 1rem;
+          }
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,15 @@
+<div class="product product--selectable"
+     (click)="navigateToProductDetails(product.id)">
+
+  <div class="product__image" [style.background-image]="prepareUrl(product.imageUrl)">
+  </div>
+
+  <div class="product__content">
+    <div class="content__title">
+      {{product.title}}
+    </div>
+    <div class="content__description content__description--wrapped">
+      {{product.description}}
+    </div>
+  </div>
+</div>

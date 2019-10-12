@@ -1,0 +1,53 @@
+.card {
+
+  @include box-shadow();
+  @include respond(phone) {
+    padding: 2rem;
+  }
+
+  background-color: $white;
+  padding: 4rem;
+
+  &--absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include respond(phone) {
+      height: 100%;
+      position: initial;
+      transform: translate(0, 0);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__icon {
+    text-align: center;
+  }
+
+  &__header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: $font-lg;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    &--justify {
+      text-align: justify;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &__section {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

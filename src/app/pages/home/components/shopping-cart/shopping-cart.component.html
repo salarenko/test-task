@@ -1,0 +1,42 @@
+<div class="cart">
+
+  <div class="cart__section">
+    <div class="section__title">
+      <fa-icon icon="address-book"></fa-icon>
+      Contact
+    </div>
+    <div class="section__content">
+      <p class="content__paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi doloremque, fugit ipsa numquam pariatur sunt
+        tempora! Dolore, in, provident. Quis ratione, voluptates! Dolores modi non perspiciatis tempora! Dolor harum,
+        velit.
+      </p>
+    </div>
+  </div>
+
+  <div class="cart__section">
+    <div class="section__title">
+      <fa-icon icon="shopping-cart"></fa-icon>
+      Cart ( {{productsList.length}} )</div>
+    <div class="section__content">
+      <ul class="cart-product-list">
+
+        <ng-container *ngIf="productsList.length > 0; then productListTemplate; else noProductsTemplate"></ng-container>
+
+        <ng-template #productListTemplate>
+          <li class="cart-product-list__elememt" *ngFor="let product of productsList">
+            <span class="element__id">{{product.id}}</span>{{product.title}}
+          </li>
+        </ng-template>
+
+        <ng-template #noProductsTemplate>
+          <span class="cart-product-list__message">
+            Cart is empty
+          </span>
+        </ng-template>
+
+      </ul>
+    </div>
+  </div>
+
+</div>

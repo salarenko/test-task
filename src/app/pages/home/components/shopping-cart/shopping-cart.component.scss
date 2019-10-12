@@ -1,0 +1,57 @@
+@import "../../../../../styles/base/variables";
+@import "../../../../../styles/base/mixins";
+
+.cart {
+  @include box-shadow();
+
+  position: sticky;
+  top: 1rem;
+
+  background-color: $light-blue;
+  color: $white;
+  padding: 1.5rem;
+
+  &__section {
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    .section__title {
+      margin-bottom: .5rem;
+    }
+    .section__content {
+      .content__paragraph {
+        font-size: $font-sm;
+      }
+    }
+  }
+}
+
+.cart-product-list {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100px;
+
+  @include respond(tab-port) {
+    min-height: 50px;
+  }
+
+  padding: .5rem;
+  border: 1px dashed white;
+
+  &__elememt {
+    padding: .5rem;
+    background-color: $dark-blue;
+
+    .element__id {
+      padding-right: .5rem;
+      color: $accent;
+    }
+  }
+
+  &__message {
+    margin: auto;
+  }
+}

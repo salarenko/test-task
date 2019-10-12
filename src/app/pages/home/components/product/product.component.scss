@@ -1,0 +1,19 @@
+@import "../../../../../styles/base/variables";
+@import "../../../../../styles/base/mixins";
+
+.product {
+  &__image {
+    height: 250px;
+
+    @include respond(tab-port) {
+      height: 200px;
+    }
+  }
+
+  &__content {
+    background-color: $white;
+    &__description {
+      color: $light-text;
+    }
+  }
+}

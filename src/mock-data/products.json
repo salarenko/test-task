@@ -1,0 +1,61 @@
+[{
+  "id": "1",
+  "title": "Product 1",
+  "imageUrl": "https://picsum.photos/200/300?random=1",
+  "description": "Product 1 description"
+},{
+  "id": "2",
+  "title": "Product 2",
+  "imageUrl": null,
+  "description": "Product 2 description"
+},{
+  "id": "3",
+  "title": "Product 3",
+  "imageUrl": "https://picsum.photos/200/300?random=3",
+  "description": "Product 3 fascinating description a little bit too long"
+},{
+  "id": "4",
+  "title": "Product 4",
+  "imageUrl": "https://picsum.photos/200/300?random=4",
+  "description": "Product 4 description"
+},{
+  "id": "5",
+  "title": "Product 5",
+  "imageUrl": "https://picsum.photos/200/300?random=5",
+  "description": "Product 5 description"
+},{
+  "id": "6",
+  "title": "Product 6",
+  "imageUrl": "https://picsum.photos/200/300?random=6",
+  "description": "Product 6 description"
+},{
+  "id": "7",
+  "title": "Product 7",
+  "imageUrl": "https://picsum.photos/200/300?random=7",
+  "description": "Product 7 description"
+},{
+  "id": "8",
+  "title": "Product 8",
+  "imageUrl": "https://picsum.photos/200/300?random=8",
+  "description": "Product 8 description"
+},{
+  "id": "9",
+  "title": "Product 9",
+  "imageUrl": "https://picsum.photos/200/300?random=9",
+  "description": "Product 9 description"
+},{
+  "id": "10",
+  "title": "Product 10",
+  "imageUrl": "https://picsum.photos/200/300?random=10",
+  "description": "Product 10 description"
+},{
+  "id": "11",
+  "title": "Product 11",
+  "imageUrl": "https://picsum.photos/200/300?random=11",
+  "description": "Product 11 description"
+},{
+  "id": "12",
+  "title": "Product 12",
+  "imageUrl": "https://picsum.photos/200/300?random=12",
+  "description": "Product 12 description"
+}]

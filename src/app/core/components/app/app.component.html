@@ -1,0 +1,13 @@
+<app-loader [displayLoader]="displayLoader$ | async"></app-loader>
+
+<div class="view-holder">
+
+  <div class="view-holder__navigation">
+    <app-nav-bar></app-nav-bar>
+  </div>
+
+  <main class="view-holder__main-content">
+    <router-outlet></router-outlet>
+  </main>
+
+</div>

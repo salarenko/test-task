@@ -1,0 +1,13 @@
+.view-holder {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__navigation {
+    z-index: 1;
+  }
+
+  &__main-content {
+    flex-grow: 1;
+  }
+}
